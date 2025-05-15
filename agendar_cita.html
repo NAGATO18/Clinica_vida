@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendar Cita</title>
+    <link rel="stylesheet" href="agendar_cita.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Agendar Cita Médica</h2>
+        <form action="agendar_cita.php" method="POST">
+            <label for="id_paciente">ID del Paciente:</label>
+            <input type="number" name="id_paciente" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" name="hora" required>
+
+            <label for="motivo">Motivo:</label>
+            <input type="text" name="motivo" required>
+
+            <input type="submit" value="Agendar Cita">
+        </form>
+    </div>
+</body>
+</html>
