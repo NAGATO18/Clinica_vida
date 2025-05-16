@@ -1,7 +1,7 @@
 <?php
 session_start();  // Inicia la sesión
 
-$conexion = new mysqli("localhost", "root", "", "bd");
+$conexion = new mysqli("localhost", "root", "", "bd_CitasMedicas");
 
 if ($conexion->connect_error) {
     die("Conexión fallida: " . $conexion->connect_error);
